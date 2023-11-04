@@ -7,9 +7,8 @@ const RecipeList = ({recipe , handleRecipeClick}) => {
     const recipeId = match[1];
 
     return (
-        <div className="container my-4" >
-        <div className="row">
-          <div className="">
+        <div className="container col-md-4  my-4" >
+        
             <div className="card" onClick={() => handleRecipeClick(recipeId)}>
               <img style={{height: '200px'}} src={recipe.image} className="card img-fluid" alt={recipe.title} />
               <div className="card-body">
@@ -23,9 +22,7 @@ const RecipeList = ({recipe , handleRecipeClick}) => {
                 </p>
               </div>
             </div>
-          </div>
         </div>
-      </div>
       
   )
 }

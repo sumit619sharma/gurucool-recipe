@@ -40,7 +40,7 @@ const handleFavorite = ()=> {
   
   return (
     <div className='row mt-3 '>
-    <div className='col-md-4 mx-auto text-center'>
+    <div className='col-md-9 mx-auto text-center'>
     <input className='m-3 p-2' 
     type="text"
     placeholder="Search for recipes..."
@@ -52,7 +52,7 @@ const handleFavorite = ()=> {
   {recipes.length === 0 ? (
     <p>No recipes found.</p>
   ) : (
-    <ul >
+    <ul className='d-flex flex-wrap  align-items-center'>
     { recipes.map((recipe) => (
         <RecipeList 
         recipe={recipe.recipe}
